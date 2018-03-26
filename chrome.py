@@ -1,4 +1,4 @@
 from selenium import webdriver
 
-driver = webdriver.chrome
-driver.open()
+driver = webdriver.Chrome()
+driver.get('https://chrome.google.com/webstore/detail/cookietxt-export/lopabhfecdfhgogdbojmaicoicjekelh/')

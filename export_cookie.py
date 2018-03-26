@@ -22,5 +22,6 @@ cursor = db.cursor()
 cursor.execute('SELECT * FROM cookies')
 with open('output.csv', 'w') as csvfile:
     writer = csv.writer(csvfile)
-    writer.writerow([ i[0] for i in cursor.description ]) 
-    writer.writerows(cursor.fetchall())
+    print [i[0] for i in cursor.description]
+    # writer.writerow([ i[0] for i in cursor.description ]) 
+    # print cursor.fetchall()
